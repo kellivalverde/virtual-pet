@@ -15,6 +15,20 @@ These are the steps I did:
 
 You will need Gradle installed on your machine to use the included gradle scripts
 
+## About Pterry
+
+###Pterry's states:
+
+- Hunger (needs to be fed))
+- Thirst (needs water)
+- Excercise (play fetch)
+- Waste (needs to go to the bathroom))
+- Sickness (needs medicine)
+- Sleep (sing lullaby)
+
+
+
+
 
 
                                     <\              _
