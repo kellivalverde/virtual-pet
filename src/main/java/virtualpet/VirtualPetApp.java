@@ -12,30 +12,27 @@ public class VirtualPetApp {
 		System.out.println("Hello, my name is " + myPet.getPetName() + "!"
 				+ "\n \n********************************************** \n \n");
 
+		System.out.println("So, what would you like to do?");
+		System.out.println("\nHint: Keep my stats down to keep me a happy pet.\n");
+		printMenu();
+
 		// loop start
 
 		while (true) {
 
-			System.out.println("Here's how I feel...");
+			System.out.println("\nHere's how I feel: ");
 			// could I clean this up with an array?
 			System.out.println("Hunger: " + myPet.getHunger());
 			System.out.println("Thirst: " + myPet.getThirst());
 			System.out.println("Poop level: " + myPet.getPoop());
 			System.out.println("Boredom: " + myPet.getBoredom());
 
-			System.out.println("\nHint: Keep my stats down to keep me a happy pet.");
-
-			System.out.println("\nSo, what would you like to do? \n");
-			System.out.println("Press 1 to feed me");
-			System.out.println("Press 2 to give me water");
-			System.out.println("Press 3 to clean my poop");
-			System.out.println("Press 4 to play fetch");
-			System.out.println("Press 5 to do nothing");
-			System.out.println("Press 6 to leave");
-
 			String menuOption = input.nextLine();
 
-			if (menuOption.contentEquals("1")) {
+			if (menuOption.contentEquals("help")) {
+				printMenu();
+				continue;
+			} else if (menuOption.contentEquals("1")) {
 				System.out.println("Yum yum! I love food.");
 				myPet.feed();
 
@@ -45,7 +42,7 @@ public class VirtualPetApp {
 			} else if (menuOption.contentEquals("3")) {
 				System.out.println("Thanks! It was getting stinky in here.");
 				myPet.cleanPoop();
-					
+
 			} else if (menuOption.contentEquals("4")) {
 				System.out.println("Yay! Let's play!");
 				myPet.play();
@@ -68,6 +65,20 @@ public class VirtualPetApp {
 		} // loop end
 
 		input.close();
+
+	}
+
+	public static void printMenu() {
+
+		System.out.println("Press 1 to feed me");
+		System.out.println("Press 2 to give me water");
+		System.out.println("Press 3 to clean my poop");
+		System.out.println("Press 4 to play fetch");
+		System.out.println("Press 5 to do nothing");
+		System.out.println("Press 6 to leave");
+
+		System.out.println("To see menu, type \"help\".");
+
 	}
 
 }
