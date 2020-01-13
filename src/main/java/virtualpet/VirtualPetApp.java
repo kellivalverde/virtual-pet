@@ -23,7 +23,7 @@ public class VirtualPetApp {
 			System.out.println("Poop level: " + myPet.getPoop());
 			System.out.println("Boredom: " + myPet.getBoredom());
 
-			System.out.println("\nHint: Get all my stats down to zero to keep me a happy pet.");
+			System.out.println("\nHint: Keep my stats down to keep me a happy pet.");
 						
 			System.out.println("\nSo, what would you like to do? \n");
 			System.out.println("Press 1 to feed me");
@@ -31,6 +31,7 @@ public class VirtualPetApp {
 			System.out.println("Press 3 to clean my poop");
 			System.out.println("Press 4 to play fetch");
 			System.out.println("Press 5 to do nothing");
+			System.out.println("Press 6 to leave");
 
 			String menuOption = input.nextLine();
 
@@ -52,6 +53,9 @@ public class VirtualPetApp {
 				myPet.play();
 								
  			} else if(menuOption.contentEquals("5")) {
+				System.out.println("...Ok");
+										
+ 			} else if(menuOption.contentEquals("6")) {
  				System.out.println("Aw man... Ok, I guess I'll see you later.");
 				break;
 			} else {
