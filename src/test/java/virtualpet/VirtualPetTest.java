@@ -4,6 +4,9 @@ import org.junit.Test;
 
 public class VirtualPetTest {
 
+	//NOT FINISHED
+	
+	
 	//build out unit tests on the behaviors placed in VirtualPet
 	
 	// Instance variables (attributes) represent the state of your pet. 
@@ -11,7 +14,7 @@ public class VirtualPetTest {
 	
 
 	@Test
-	public void shouldHaveHungerOf100AfterFed() {
+	public void shouldHaveHungerOf1AfterFed() {
 //
 //		VirtualPet underTest = new VirtualPet(0);
 //		underTest.feed(100);

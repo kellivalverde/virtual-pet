@@ -21,10 +21,9 @@ You will need Gradle installed on your machine to use the included gradle script
 
 - Hunger (needs to be fed))
 - Thirst (needs water)
-- Excercise (play fetch)
+- Excercise (play )
 - Waste (needs to go to the bathroom))
-- Sickness (needs medicine)
-- Sleep (sing lullaby)
+
 
 
 

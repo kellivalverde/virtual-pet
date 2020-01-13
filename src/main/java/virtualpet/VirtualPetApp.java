@@ -11,6 +11,7 @@ public class VirtualPetApp {
 
 		System.out.println("Hello, my name is " + myPet.getPetName() + "!"
 				+ "\n \n********************************************** \n \n");
+		pterryAscii();
 
 		System.out.println("So, what would you like to do?");
 		System.out.println("\nHint: Keep my stats down to keep me a happy pet.\n");
@@ -78,7 +79,16 @@ public class VirtualPetApp {
 		System.out.println("Press 6 to leave");
 
 		System.out.println("To see menu, type \"help\".");
-
+		
 	}
 
-}
+	public static void pterryAscii() {
+		System.out.println("        _   .^.  _ 			");
+		System.out.println("       // ` |@ \\''\\			");
+		System.out.println("      /.-.-.\\ /\\-.-\\ 		");
+		System.out.println("        ----m m-----                ");
+	}
+	}
+	
+	
+
