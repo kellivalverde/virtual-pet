@@ -26,7 +26,8 @@ public class VirtualPet {
 	}
 
 	public void feed() {
-		hunger = 0;
+		hunger = -1;
+		poop ++;
 	}
 
 	// thirst
@@ -35,7 +36,7 @@ public class VirtualPet {
 	}
 
 	public void giveWater() {
-		thirst = 0;
+		thirst = -1;
 	}
 
 	// poop level
@@ -44,7 +45,7 @@ public class VirtualPet {
 	}
 
 	public void cleanPoop() {
-		poop = 0;
+		poop = -1;
 	}
 
 	// boredom
@@ -53,7 +54,8 @@ public class VirtualPet {
 	}
 
 	public void play() {
-		boredom = 0;
+		boredom = -1;
+		thirst ++;
 	}
 
 	
