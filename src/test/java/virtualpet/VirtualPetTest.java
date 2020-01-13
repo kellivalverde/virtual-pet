@@ -1,7 +1,5 @@
 package virtualpet;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 
 public class VirtualPetTest {
@@ -13,13 +11,17 @@ public class VirtualPetTest {
 	
 
 	@Test
-	public void timePasses() {
+	public void shouldHaveHungerOf100AfterFed() {
 //
-//		VirtualPet underTest = new VirtualPet();  // Class -- name of object = new -- constructor
-//		double balance = underTest.getBalance();
-//		assertEquals(100, balance, 0.0009); // 0.0009 is a forgiveness range here
+//		VirtualPet underTest = new VirtualPet(0);
+//		underTest.feed(100);
+//		int hunger = underTest.getHunger();
+//		assertEquals(100, hunger, 0);
 	}
+
 	
+	//hasToPoopAfterItEats
+	//isThirstyAfterPlay
 	
 	
 }
