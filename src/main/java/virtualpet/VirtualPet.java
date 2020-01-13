@@ -43,12 +43,8 @@ public class VirtualPet {
 		return poop;
 	}
 
-	public void cleanPoop(int poopScooped) {
-		if (poop > poopScooped) {
-			poop -= poopScooped; // make Pterry sad?
-		} else {
-			poop -= poop;
-		}
+	public void cleanPoop() {
+		poop = 0;
 	}
 
 	// boredom
@@ -56,7 +52,7 @@ public class VirtualPet {
 		return boredom;
 	}
 
-	public void playFetch() {
+	public void play() {
 		boredom = 0;
 	}
 

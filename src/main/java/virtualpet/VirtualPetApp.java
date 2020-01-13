@@ -35,19 +35,28 @@ public class VirtualPetApp {
 			String menuOption = input.nextLine();
 
 			if (menuOption.contentEquals("1")) {
-				System.out.println("Yum yum! I love food");
+				System.out.println("Yum yum! I love food.");
 				myPet.feed();
-			} else if (menuOption.contentEquals("5")) {
-				break;
+				//myPet.getHunger --;
+								
+			} else if(menuOption.contentEquals("2")) {
+				System.out.println("Glug glug! Thanks for the water!");
+				myPet.giveWater();
+			}	
+			else if(menuOption.contentEquals("3")) {
+				System.out.println("Thanks! It was getting stinky in here.");
+				myPet.cleanPoop();
 			}
-			
-			
-			
-//		System.out.println("Enter deposit amount: ");
-//		int amountToDeposit = input.nextInt();
-//		myAtm.deposit(amountToDeposit);
-//		input.nextLine(); // gives us input separation
-//		
+			 else if(menuOption.contentEquals("4")) {
+				System.out.println("Yay! Let's play!");
+				myPet.play();
+								
+ 			} else if(menuOption.contentEquals("5")) {
+ 				System.out.println("Aw man... Ok, I guess I'll see you later.");
+				break;
+			} else {
+				System.out.println("What?! Say that again.");
+			}
 
 			myPet.tick();
 			
@@ -56,8 +65,8 @@ public class VirtualPetApp {
 			
 			
 		} // loop end
-		
-		input.close();
-	}
+
+	input.close();
+}
 
 }
