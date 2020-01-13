@@ -9,32 +9,40 @@ public class VirtualPetApp {
 		VirtualPet myPet = new VirtualPet("Pterry the Pterodactyl");
 		Scanner input = new Scanner(System.in);
 
-		System.out.println("Hello, my name is " + myPet.getPetName() + "!" + "\n \n ****************** \n \n");
-		
-	// loop start
+		System.out.println("Hello, my name is " + myPet.getPetName() + "!"
+				+ "\n \n********************************************** \n \n");
+
+		// loop start
 
 		while (true) {
 
 			System.out.println("Here's how I feel...");
-
+																		// could I clean this up with an array?
 			System.out.println("Hunger: " + myPet.getHunger());
-			// other stats
-			
-			
-			
+			System.out.println("Thirst: " + myPet.getThirst());
+			System.out.println("Poop level: " + myPet.getPoop());
+			System.out.println("Boredom: " + myPet.getBoredom());
+
 			System.out.println("\nHint: Get all my stats down to zero to keep me a happy pet.");
+						
 			System.out.println("\nSo, what would you like to do? \n");
-			// list of things to do: feed, water, play...
 			System.out.println("Press 1 to feed me");
 			System.out.println("Press 2 to give me water");
 			System.out.println("Press 3 to clean my poop");
 			System.out.println("Press 4 to play fetch");
 			System.out.println("Press 5 to do nothing");
-			
-
 
 			String menuOption = input.nextLine();
 
+			if (menuOption.contentEquals("1")) {
+				System.out.println("Yum yum! I love food");
+				myPet.feed();
+			} else if (menuOption.contentEquals("5")) {
+				break;
+			}
+			
+			
+			
 //		System.out.println("Enter deposit amount: ");
 //		int amountToDeposit = input.nextInt();
 //		myAtm.deposit(amountToDeposit);
@@ -42,9 +50,14 @@ public class VirtualPetApp {
 //		
 
 			myPet.tick();
-			input.close();
+			
+			System.out.println("Press enter to see how I feel now.");
+			input.nextLine();
+			
+			
 		} // loop end
-
+		
+		input.close();
 	}
 
 }
