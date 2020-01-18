@@ -6,7 +6,7 @@ public class VirtualPet {
 	private int thirst;
 	private int poop;
 	private int boredom;
-	private int tired;
+	// private int tired;
 
 	private String petName;
 

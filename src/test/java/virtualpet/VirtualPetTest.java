@@ -1,31 +1,23 @@
 package virtualpet;
 
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class VirtualPetTest {
 
-	//NOT FINISHED
+	private String petName = "Pterry";
 	
-	
-	//build out unit tests on the behaviors placed in VirtualPet
-	
-	// Instance variables (attributes) represent the state of your pet. 
-	// Methods (activities) represent the behavior of your pet
-	
+	VirtualPet myPet = new VirtualPet(petName); // calling default constructor
 
 	@Test
-	public void shouldHaveHungerOf1AfterFed() {
-//
-//		VirtualPet underTest = new VirtualPet(0);
-//		underTest.feed(100);
-//		int hunger = underTest.getHunger();
-//		assertEquals(100, hunger, 0);
+	public void hungerShouldBe0AtStart() {
+
+		// act
+		int result = myPet.getHunger(); // makes a method in VP2 class
+
+		// assert
+		assertEquals(0, result);
 	}
 
-	
-	//hasToPoopAfterItEats
-	//isThirstyAfterPlay
-	
-	
 }
  
