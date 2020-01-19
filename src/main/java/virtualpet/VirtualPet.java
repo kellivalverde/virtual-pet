@@ -1,14 +1,16 @@
+//homework
 package virtualpet;
 
 public class VirtualPet {
 
-	private int hunger;
-	private int thirst;
-	private int poop;
-	private int boredom;
-	// private int tired;
-
+	private int hunger = 0; // baby bear
+	private int thirst = 0;
+	private int boredom = 0;
+	private int poop = 0;
 	private String petName;
+	private String petDescription;
+
+	
 
 	public VirtualPet(String petName) {
 		this.petName = petName;
@@ -17,7 +19,21 @@ public class VirtualPet {
 	// getters
 
 	public String getPetName() {
-		return petName;
+		return this.petName;
+	}
+
+	public String getPetDescription() {
+		return this.petDescription;
+	}
+
+	public VirtualPet(String petNameParameter, String petDescriptionParameter) {
+		this.petName = petNameParameter;
+		this.petDescription = petDescriptionParameter;
+
+	}
+
+	public VirtualPet(String string, String string2, int i, int j, int k) {
+		// TODO Auto-generated constructor stub
 	}
 
 	// food
@@ -27,7 +43,7 @@ public class VirtualPet {
 
 	public void feed() {
 		hunger = -1;
-		poop ++;
+		poop++;
 	}
 
 	// thirst
@@ -55,10 +71,8 @@ public class VirtualPet {
 
 	public void play() {
 		boredom = -1;
-		thirst ++;
+		thirst++;
 	}
-
-	
 
 	// tick() method
 	public void tick() {

@@ -1,3 +1,5 @@
+//homework
+
 package virtualpet;
 
 import java.util.Scanner;
